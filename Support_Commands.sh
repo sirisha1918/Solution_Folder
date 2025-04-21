@@ -1,3 +1,18 @@
+The Hyperledger Fabric test network can be started using the command  
+
+./network.sh up createChannel with a default channel mychannel. 
+
+The peers for Org1 and Org2 are joined to the channel. 
+
+The chaincode environment setup is pre-configured in the chaincode directory. 
+
+Deploy the chaincode: 
+
+Navigate to Project/ Hyperledger/challenge/ test-network folder 
+
+./network.sh deployCC -c mychannel -ccn paymentscc -ccp ../chaincode -ccl go 
+
+
 # To set the environment for Org1: 
 export FABRIC_CFG_PATH=${PWD}/configtx  
 source ./scripts/setOrgPeerContext.sh 1 
