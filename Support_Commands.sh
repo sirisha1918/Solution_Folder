@@ -21,6 +21,6 @@ peer chaincode invoke -o localhost:7050 --ordererTLSHostnameOverride orderer.exa
  
 peer chaincode query -C mychannel -n paymentscc \-c '{"Args":["GetBalance", "account1"]}' 
 
-peer chaincode query -C mychannel -n paymentscc \ -c '{"Args":["GetBalance", "account2"]}' 
+peer chaincode query -C mychannel -n paymentscc \-c '{"Args":["GetBalance", "account2"]}' 
 
  
